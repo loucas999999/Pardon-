@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dots{
+    border: none;
+    background-color: black;
+    fill: white;
+}
+
+.icon__dots {
+    display: none;
+}
+
+
+
+.heading,
+.footer {
+    font-family: 'Smooch', cursive;
+    color: white;
+    padding: 60px;
+    font-size: 1.20rem;
+}
+
+.nav a{
+    color: white;
+    fill: white;
+    list-style-type: none;
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 80px 50px 0 0 ;
+}
+
+
+.icon{
+    position: absolute;
+    top: 2.25cm;
+    right: 1cm;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.img {
+    max-width: 20%;
+}
+
+.more{
+    font-family: 'Poppins', sans-serif;
+    height: 3cm;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: x-large;
+    text-transform:uppercase 
+}
+
+.more a{
+    color: #E1D9D1; 
+    font-size: medium;   
+}
+
+
+.box{
+    margin-top: 2.5cm;
+    background-color: white;
+    height: 90vh;
+}
+
+.box p{
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12cm;
+}
+
+#talk a{
+    position: absolute;
+    color:black;
+    font-size: medium;
+    top: 45cm;
+}
+
+.box a::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 100%;
+    background: black;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.box a:hover::before{
+    transform: scaleX(1);
+}
+
+
+.footer p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li{
+    list-style-type: none;
+    display: flex;   
+}
+
+@media (max-width: 1536px) {
+
+}
+
+@media (max-width: 1280px) {
+    #talk a {
+        top: 42cm;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #talk a {
+        top: 34cm;
+    }
+
+    .box {
+        height: 60vh;
+    }
+
+    .box p {
+        font-size: x-large;
+        height: 8cm;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    #talk a {
+        top: 45cm;
+        font-size: small;
+    }
+
+    .box {
+        height: 60vh;
+    }
+
+    .box p {
+        font-size: larger;
+        height: 8cm;
+
+    }
+
+    .images {
+        display: flex;
+    }
+
+    .img {
+        max-width: 30%;
+    }
+
+
+
+}
+
+@media (max-width: 640px) {
+
+    .heading,
+    .footer {
+        padding: 30px;
+    }
+
+    .nav a {
+        font-size: medium;
+    }
+
+    .nav li {
+        padding: 50px 25px 0 0 ;
+    }
+
+    .icon{
+        position: absolute;
+        top: 1.3cm;
+        right: 0.5cm;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        
+    }
+
+    .img {
+        max-width: 40%;
+    }
+
+    #talk a {
+        top: 50cm;
+        font-size: small;
+    }
+
+    .box {
+        height: 50vh;
+    }
+
+    .box p {
+        font-size: larger;
+        max-width: 30ch;
+        height: 8cm;
+        margin:0 auto;
+      
+
+
+    }
+
+    #work {
+        padding: 0 15px 0 0;
+    }
+
+
+}
+
+@media (max-width: 475px) {
+
+    .footer {
+        font-size: small;
+        padding: 20px;
+    }
+
+    .nav li {
+        display: none;
+    }
+
+    .icon__dots {
+        display: block;
+    }
+
+    .dots {
+        padding: 40px;
+    }
+
+    #talk a {
+        top: 47cm;
+        font-size: small;
+    }
+
+    .box {
+        height: 15cm;
+    }
+
+    .box__p {
+        padding: 10px 25px 0; 
+    }
+
+    .img {
+        max-width: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
